@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favico.png">
+    </link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramita Widget Description</title>
+</head>
+
+<body>
+    <div class="sheet">
+        <div class="column_left">
+            <div class="black fs_30 title">Paramita Widget Description</div>
+            <section id="music_player">
+                <div class="sub_title">Music Player</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/music_player_1.gif">
+                    <img src="./images/proximity_sensor.gif">
+                    <img src="./images/bow_timer.gif">
+                    <img src="./images/music_player_2.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            Supports multiple types of players. Different themes available for different tasks (yellow and pink). Bow counter and live lyrics during mantras provided.
+                        </li>
+                        <li>
+                            The proximity sensor counts each time it detects a head. To prevent duplication and maintain their pace, the user can refer to when the lotus indicator in the upper right corner is fully loaded.
+                        </li>
+                        <li>
+                            If a device doesn't support the proximity sensor, go to settings and set the bow timer.
+                        </li>
+                        <li>
+                            The music player calculates the position of the title and play button and applies the
+                            position to the minimized and maximized player size.
+                        </li>
+                        <li>
+                            Dismissible music player.
+                        </li>
+                        <li>
+                            lock progress bar, loop mode, set speed.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="background">
+                <div class="sub_title">Background Mode</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/background_mode_1.gif">
+                    <img src="./images/background_mode_2.gif" style="object-fit: contain;">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Background action interacts with the local db to track progress.</li>
+                        <li>Play, pause, go to the next or previous song, seek duration in the background.</li>
+                        <li>Reflects the number of iterations of the task.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="live_lyrics">
+                <div class="sub_title">Live Lyrics</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/live_lyrics.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Improved performance to updating current duration once second is changed using rxdart.</li>
+                        <li>Scroll to a current lyric. Flutter doesn't support scrollToItem currently.</li>
+                        <li>Previous, current, and next lyrical phrases have different text effect styles.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="progress_bar">
+                <div class="sub_title">Progress Bar</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/progress_bar_1.gif">
+                    <img src="./images/progress_bar_2.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Implemented with custom painter and gestures.</li>
+                        <li>Supports two different types of progress bars.</li>
+                        <li>Calculates the position of the indicator according to the center of the user's gesture.</li>
+                        <li>Seek duration box follows progress bar's indicator not to overflow at screen's edges.</li>
+                        <li>Grows, shrinks, and aligns according to the size of the music player.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="help">
+                <div class="sub_title">Floating Help Indicator</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/floating_help.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Help is supported on all interactive screens.</li>
+                        <li>Help Indicator position can be changed.</li>
+                        <li>Once help is activated, it expands across the whole screen while bottom navigation bar and active music player is hidden.</li>
+                        <li>Arrow drawn with custom painter with animation.</li>
+                </div>
+            </section>
+
+            <section id="bar_chart">
+                <div class="sub_title">Bar Chart</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/bar_chart.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Daily progress is saved until midnight. Progress resets each day.</li>
+                        <li>Completion percentage rate provided daily and organized by year.</li>
+                        <li>Bar graph adjusts according to the tab indicator.</li>
+                        <li>The indicator follows where the user taps.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="text_reader">
+                <div class="sub_title">Text Reader</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/text_reader.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>User's record feelings and thoughts in the reflection journal.</li>
+                        <li>Date, percentage of completion, and reflection of that day displayed.</li>
+                        <li>The left wall indicator appears and disappears depending on the scroll position.</li>
+                        <li>When the user taps a month on the left side, the reader moves to the corresponding month.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section id="dropdown">
+                <div class="sub_title">Dropdown</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/animation/dropdown.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Implemented it using self-made plugin, cool_dropdown.</li>
+                        <li>Included function to give a scroll effect when the words overflow.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="tab_indicator">
+                <div class="sub_title">Tab Indicator</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/tab_indicator_1.gif">
+                    <img src="./images/tab_indicator_2.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Displayed horizontally and vertically.</li>
+                        <li>Automatically resizes and aligns to the child Widget.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="bottom_sheet">
+                <div class="sub_title">Bottom Sheet</div>
+                <div class="sample_img--horizontal">
+                    <img src="./images/bottom_sheet_1.gif">
+                    <img src="./images/bottom_sheet_2.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>The height of the bottom sheet adapts to the height of the content.</li>
+                        <li>If the height of the content is greater than the height of the bottom
+                            sheet, scrolling is applied automatically</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="local_notification">
+                <div class="sub_title">Local Notification</div>
+                <div class="sample_img--vertical">
+                    <img src="./images/design/alert.jpg">
+                    <img src="./images/design/notification.jpg">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>The user sets a time to start tasks and receives notifications.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="custom_paint">
+                <div class="sub_title">Custom Paint Animation</div>
+                <div class="sample_img--grid">
+                    <img src="./images/animation/buddha.gif">
+                    <img src="./images/animation/progress_indicator.gif">
+                    <img src="./images/animation/karma.gif">
+                    <img src="./images/animation/enlightenment.gif">
+                </div>
+                <div class="sample_img--grid" style="padding: 1rem 0;">
+                    <img src="./images/animation/lock_animation_1.gif">
+                    <img src="./images/animation/lock_animation_2.gif">
+                    <img src="./images/animation/next_play_previous.gif">
+                    <img src="./images/animation/minus_plus.gif">
+                </div>
+                <div class="sample_img--grid">
+                    <img src="./images/animation/loading_1.gif">
+                    <img src="./images/animation/loading_2.gif">
+                    <img src="./images/animation/repeat_animation.gif">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Designed all icons, animations, and custom painter.</li>
+                        <li>Design is intentional and reflective of Buddhism itself— simple, clean, and minimalistic.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="glassmorphism">
+                <div class="sub_title">Glassmorphism</div>
+                <div class="sample_img--glassmorphism">
+                    <img src="./images/design/glassmorphism_1.jpg">
+                    <img src="./images/design/glassmorphism_6.jpg">
+                </div>
+                <div class="sample_img--glassmorphism">
+                    <div style="display: flex; flex-direction: column;">
+                        <div>
+                            <img src="./images/design/glassmorphism_4.jpg" style="max-width: max-content;">
+                            <img src="./images/design/glassmorphism_5.jpg" style="max-width: max-content;">
+                        </div>
+                        <div>
+                            <img src="./images/design/glassmorphism_2.jpg">
+                        </div>
+                    </div>
+                    <img src="./images/design/glassmorphism_3.jpg">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Glassmorphism was applied to all floating widgets to provide consistency for users.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="column_right">
+            <nav>
+                <li class=""><a href="#music_player">Music Player</a></li>
+                <li class=""><a href="#background">Background Mode</a></li>
+                <li class=""><a href="#live_lyrics">Live Lyrics</a></li>
+                <li class=""><a href="#progress_bar">Progress Bar</a></li>
+                <li class=""><a href="#help">Floating Help Indicator</a></li>
+                <li class=""><a href="#bar_chart">Bar Chart</a></li>
+                <li class=""><a href="#text_reader">Text Reader</a></li>
+                <li class=""><a href="#dropdown">Dropdown</a></li>
+                <li class=""><a href="#tab_indicator">Tab Indicator</a></li>
+                <li class=""><a href="#bottom_sheet">Bottom Sheet</a></li>
+                <li class=""><a href="#local_notification">Local Notification</a></li>
+                <li class=""><a href="#custom_paint">Custom Paint Animation</a></li>
+                <li class=""><a href="#glassmorphism">Glassmorphism</a></li>
+            </nav>
+            <div class="scroll_notice">
+                ※ When the browser finishes loading, enable to scroll to item.
+            </div>
+        </div>
+
+</body>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                if (entry.intersectionRatio > 0) {
+                    document.querySelector(`nav a[href="#${id}"]`).parentElement.classList.add('active');
+                } else {
+                    document.querySelector(`nav a[href="#${id}"]`).parentElement.classList.remove('active');
+                }
+            });
+        });
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll('section[id]').forEach((section) => {
+            observer.observe(section);
+        });
+
+    });
+</script>
+
+</html>
